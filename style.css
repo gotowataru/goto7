@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
+/* ↓↓↓ UI要素コンテナのスタイル ↓↓↓ */
+#uiContainer {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明の背景 */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex; /* 横並びにする */
+    align-items: center; /* 垂直方向中央揃え */
+    font-family: sans-serif;
+}
+
+#resetButton {
+    padding: 5px 10px; /* 少し小さく */
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* 右に余白 */
+}
+
+#yellowCounter {
+    font-size: 14px;
+}
+/* ↑↑↑ UI要素コンテナのスタイル ↑↑↑ */
+
+
+/* ↓↓↓ クリアメッセージのスタイル ↓↓↓ */
+#clearMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101; /* UIより手前 */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    display: none; /* 最初は非表示 */
+    font-family: sans-serif;
+}
+/* ↑↑↑ クリアメッセージのスタイル ↑↑↑ */
