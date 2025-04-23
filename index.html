@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>軌道アニメーション & クリックゲーム</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="uiContainer">
+        <button id="resetButton">リセット</button>
+        <span id="yellowCounter">全ての黄色の球をクリックしろ！ 残り: <span id="yellowCount">0</span></span>
+        </div>
+    <div id="clearMessage"></div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.163.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
